@@ -100,7 +100,7 @@ sudo ./waf configure --use-all
 
 13. Параллельно в соседнем окне терминала вводим путь до библиотеки от zcm_types:
 `export ZCM_SPY_LITE_PATH='/home/user/zcm/zcm_types/libzcmtypes.so'`
-(Но чтобы не вводить это каждый раз при запуске zcm, лучше добавить это в ~/.bashrc)
+(Но чтобы не вводить это каждый раз при запуске zcm, лучше добавить это в `~/.bashrc`)
 Итого запуск можно произвести через:
 ```
 zcm-spy-lite --zcm-url ipc
