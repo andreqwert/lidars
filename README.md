@@ -1,5 +1,4 @@
 # lidars
-ZCM installation instructions
 
 
 1. Устанавливаем пакеты:
@@ -50,14 +49,16 @@ pip3 install setuptools
 import zerocm as zcm
 ```
 
-Чтобы пользоваться удобными штуками типа zcm-spy-lite - продолжаем.     
+Чтобы пользоваться удобными штуками типа zcm-spy-lite - продолжаем.
+
 6. Скачать jdk с https://www.oracle.com/java/technologies/javase-downloads.html
 Если скачано в формате `.rpm` для Ubuntu, то надо конвертировать `.rpm` в `.deb`:
 ```
 sudo apt-get install alien
 sudo alien jdk-16_linux-aarch64_bin.rpm
 ```
-7. Получится `.deb`, его можно просто открыть через Ubuntu Software и поставить как обычное приложение.    
+7. Получится `.deb`, его можно просто открыть через Ubuntu Software и поставить как обычное приложение.   
+ 
 8. Далее проверяем пути (тут записываем сразу в environment, чтоб каждый раз это не прописывать при выходе из системы):
 ```
 sudo nano /etc/environment
@@ -68,6 +69,7 @@ echo $JAVA_HOME
 (На всякий случай) установим еще pyembed:
 pip3 install pyembed
 ```
+
 9. Скачиваем интерпретатор ЯП julia, причём обязательно либо версию 0.6.4, либо 1.3.1 отсюда:
 https://julialang.org/downloads/oldreleases/
 Скачиваем `.tar.gz`, далее:
