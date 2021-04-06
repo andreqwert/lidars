@@ -64,9 +64,13 @@ sudo alien jdk-16_linux-aarch64_bin.rpm
 sudo nano /etc/environment
 JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
 source /etc/environment
+```
 Нужно выйти и зайти в систему, затем можно проверить, что всё ок командой:
+```
 echo $JAVA_HOME
+```
 (На всякий случай) установим еще pyembed:
+```
 pip3 install pyembed
 ```
 
