@@ -115,8 +115,7 @@ zcm-spy-lite --zcm-url ipc
 zcm-logplayer --zcm-url ipc 534_train_2011161419.zcm.1.dl
 ```
 
-14. [Опционально]
-Чтобы в `zcm_types` были скрипты от всех языков (а то у меня вот в lidar_livox ничего, кроме `.zcm`, не лежало), надо эти скрипты сбилдить:
+14. Чтобы в `zcm_types` были скрипты от всех языков (а то у меня вот в lidar_livox ничего, кроме `.zcm`, не лежало), надо эти скрипты сбилдить:
 ```
 cd zcm_types
 sudo sh zcm_gen.sh
