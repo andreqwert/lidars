@@ -50,14 +50,14 @@ pip3 install setuptools
 import zerocm as zcm
 ```
 
-Чтобы пользоваться удобными штуками типа zcm-spy-lite - продолжаем. 
+Чтобы пользоваться удобными штуками типа zcm-spy-lite - продолжаем.     
 6. Скачать jdk с https://www.oracle.com/java/technologies/javase-downloads.html
 Если скачано в формате `.rpm` для Ubuntu, то надо конвертировать `.rpm` в `.deb`:
 ```
 sudo apt-get install alien
 sudo alien jdk-16_linux-aarch64_bin.rpm
 ```
-7. Получится `.deb`, его можно просто открыть через Ubuntu Software и поставить как обычное приложение.
+7. Получится `.deb`, его можно просто открыть через Ubuntu Software и поставить как обычное приложение.    
 8. Далее проверяем пути (тут записываем сразу в environment, чтоб каждый раз это не прописывать при выходе из системы):
 ```
 sudo nano /etc/environment
@@ -78,7 +78,7 @@ export PATH="$PATH:/path/to/<Julia directory>/bin"
 Проверить работоспособность можно командой: julia
 Ставим символическую ссылку на julia: `sudo ln -s /путь/до/tar/gz/bin/julia /usr/bin/julia`
 
-10. Собираем всё [наконец-то] командой:
+10. Собираем всё [наконец-то] командой:    
 ```
 sudo ./waf configure --use-all
 ```
