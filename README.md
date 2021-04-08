@@ -103,19 +103,14 @@ sudo ./waf configure --use-all
 ./build/examples/examples/cpp/sub
 ```
 Запустится поток.
-
-13. Параллельно в соседнем окне терминала вводим путь до библиотеки от zcm_types:
-```
-export ZCM_SPY_LITE_PATH='/home/user/zcm/zcm_types/libzcmtypes.so'
-```
-(Но чтобы не вводить это каждый раз при запуске zcm, лучше добавить это в `~/.bashrc`)
 Итого запуск можно произвести через:
 ```
-zcm-spy-lite --zcm-url ipc
+zcm-spy-lite -u ipc -p <path_to_libzcmtipes>
 zcm-logplayer --zcm-url ipc 534_train_2011161419.zcm.1.dl
 ```
 
-14. Чтобы в `zcm_types` были скрипты от всех языков (а то у меня вот в lidar_livox ничего, кроме `.zcm`, не лежало), надо эти скрипты сбилдить:
+[Опционально]
+Чтобы в `zcm_types` были скрипты от всех языков (а то у меня вот в lidar_livox ничего, кроме `.zcm`, не лежало), надо эти скрипты сбилдить:
 ```
 cd zcm_types
 sudo sh zcm_gen.sh
