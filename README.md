@@ -106,7 +106,7 @@ sudo ./waf configure --use-all
 Итого запуск можно произвести через:
 ```
 zcm-spy-lite -u ipc -p <path_to_libzcmtipes>
-zcm-logplayer --zcm-url ipc 534_train_2011161419.zcm.1.dl
+zcm-logplayer --zcm-url ipc <path_to_zcm_file>
 ```
 
 [Опционально]
