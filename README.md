@@ -5,6 +5,7 @@
 ```
 sudo apt-get install cython3 python3-dev python3-pip python-dev cython openjdk-8-jre openjdk-8-jdk libelf1 libelf-dev npm nodejs gcc-5 g++-5
 ```
+Если gcc-5 g++-5 не ставятся, то ставим более новые.
 
 2. Ставим ZeroMQ:
 ```
@@ -57,6 +58,8 @@ import zerocm as zcm
 sudo apt-get install alien
 sudo alien jdk-16_linux-aarch64_bin.rpm
 ```
+Если первым пунктом Вы скачивали jvm/jre версии 8, то по ссылке тоже необходимо искать пакет под 8-ю версию.
+
 7. Получится `.deb`, его можно просто открыть через Ubuntu Software и поставить как обычное приложение.   
  
 8. Далее проверяем пути (тут записываем сразу в environment, чтоб каждый раз это не прописывать при выходе из системы):
@@ -71,7 +74,7 @@ echo $JAVA_HOME
 ```
 (На всякий случай) установим еще pyembed:
 ```
-pip3 install pyembed
+pip install pyembed
 ```
 
 9. Скачиваем интерпретатор ЯП julia, причём обязательно либо версию 0.6.4, либо 1.3.1 отсюда:
@@ -114,4 +117,9 @@ zcm-logplayer --zcm-url ipc <path_to_zcm_file>
 ```
 cd zcm_types
 sudo sh zcm_gen.sh
+```
+либо для новых версий:
+```
+cd zcm_types
+sudo ./build.sh
 ```
